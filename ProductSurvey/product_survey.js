@@ -6,9 +6,10 @@ function submitFeedback() {
     const designation = document.getElementById('designation').value;
     const productType = document.getElementById('productType').value;
     const feedback = document.getElementById('feedbackText').value;
+    const userExperince = document.getElementById('userExperinceText').value;
 
     const submitButton=document.getElementById('submitBtn');
-    
+    submitButton.onclick = submitFeedback;
     alert('Thank you for your valuable feedback');
 
     document.getElementById('userName').innerHTML = username;
@@ -18,10 +19,9 @@ function submitFeedback() {
     document.getElementById('userDesignation').innerHTML = designation;
     document.getElementById('userProductChoice').innerHTML = productType;
     document.getElementById('userFeedback').innerHTML = feedback;
-
+    document.getElementById('userExperince').innerHTML = userExperince;
     document.getElementById('userInfo').style.display = 'block';
 }
-submitButton.onclick = submitFeedback;
 
 document.addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
