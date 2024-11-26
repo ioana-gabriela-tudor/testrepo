@@ -29,3 +29,17 @@ show();
 // console.log(functionVar); // Throws ReferenceError
 // console.log(functionLet); // Throws ReferenceError
 // console.log(functionConst); // Throws ReferenceError
+
+{
+ let myLet = "I'm a let in a block";
+ var myVar = "I'm a var in a block";
+ const myConst = "I'm a const in a block";
+
+ myLet = "reassigned let"; 
+ myVar = "reassigned var";
+//  myConst = "reassigned const"; //assignment to constant value error
+}
+//no errors
+myLet = "reassigned let outside"; 
+myVar = "reassigned var outside";
+myConst = "reassigned const outside";
