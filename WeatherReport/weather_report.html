@@ -12,7 +12,16 @@
     <button type="submit">Get Weather</button>
   </form>
 
+  <form id="weatherFormCoordinates">
+    <label for="lat">Enter Latitude:</label>
+    <input type="text" pattern="^-?\d*(\.\d{0,4})?$" id="lat" name="lat">
+    <label for="lon">Enter Longitude:</label>
+    <input type="text" pattern="^-?\d*(\.\d{0,4})?$" id="lon" name="lon">
+    <button type="submit">Get Weather of Coordinates</button>
+  </form>
+
   <div id="weatherInfo"></div>
+  <div id="weatherInfoCoordinates"></div>
 <script src="./weather_report.js"></script>
 </body>
 </html>
